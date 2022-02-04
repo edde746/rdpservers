@@ -1,4 +1,3 @@
-import { XAxis, YAxis, HorizontalGridLines, LineSeries, FlexibleXYPlot } from 'react-vis'
 import PanelHeader from '../../components/PanelHeader'
 import { toast } from 'react-toastify'
 
@@ -67,26 +66,12 @@ export default function Manage() {
                 </div>
                 <div className='panel-card'>
                     <h1 className='card-title'>CPU Usage</h1>
-                    <div style={{ display: 'inline-block', height: '200px', width: '100%' }}>
-                        <FlexibleXYPlot>
-                            <HorizontalGridLines />
-                            <LineSeries
-                                data={cpuUsage} />
-                            <XAxis />
-                            <YAxis />
-                        </FlexibleXYPlot>
-                    </div>
+                    <p>React-vis broke when upgrading React</p>
                 </div>
                 <div className='panel-card'>
                     <h1 className='card-title'>Network Usage</h1>
-                    <div style={{ display: 'inline-block', height: '200px', width: '100%' }}>
-                        <FlexibleXYPlot>
-                            <HorizontalGridLines />
-                            <LineSeries
-                                data={netUsage} />
-                            <XAxis />
-                            <YAxis />
-                        </FlexibleXYPlot>
+                    <div style={{ display: 'inline-block', width: '100%' }}>
+                        <p>React-vis broke when upgrading React</p>
                     </div>
                 </div>
             </div>
